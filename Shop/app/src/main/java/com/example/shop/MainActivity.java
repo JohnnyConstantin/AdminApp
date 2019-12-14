@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
                             break;
                         case 3:
-                            
+
                             break;
                         case 4:
 
@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
         }
     };
         Start.setOnClickListener(listener);
+        Stack.setOnClickListener(listener);
     }
 }
 

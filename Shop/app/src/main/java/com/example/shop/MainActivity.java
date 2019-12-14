@@ -145,6 +145,9 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.stack:
                     i = new Intent(MainActivity.this, Stacks.class);
                     startActivity(i);
+                    i.putExtra("apple", apple.getQuantity());
+                    i.putExtra("cucumber", cucumber.getQuantity());
+                    i.putExtra("tomato", tomato.getQuantity());
                     break;
                 default:
                     break;

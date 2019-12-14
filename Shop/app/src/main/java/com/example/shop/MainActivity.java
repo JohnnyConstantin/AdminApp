@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
             public void handleMessage(Message msg) {
                 super.handleMessage(msg);
                 String text = String.valueOf(msg.what);
+                int clnNum = msg.what;
 
             }
         };
@@ -70,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
             public void handleMessage(Message msg) {
                 super.handleMessage(msg);
                 String text = msg.obj.toString();
+                int clnNum = msg.what;
             }
         };
 

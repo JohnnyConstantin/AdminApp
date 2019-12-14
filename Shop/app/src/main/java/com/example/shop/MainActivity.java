@@ -370,6 +370,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                             client1 = new Client(cashBox, 3, 1);
+                            client1.start();
 
                             break;
                         case 2:
@@ -380,6 +381,8 @@ public class MainActivity extends AppCompatActivity {
                             Custlayout5.setVisibility(View.GONE);
                             client1 = new Client(cashBox, 3, 1);
                             client2 = new Client(cashBox, 4, 2);
+                            client1.start();
+                            client2.start();
                             break;
                         case 3:
                             Custlayout1.setVisibility(View.VISIBLE);
@@ -390,6 +393,9 @@ public class MainActivity extends AppCompatActivity {
                             client1 = new Client(cashBox, 3, 1);
                             client2 = new Client(cashBox, 4, 2);
                             client3 = new Client(cashBox, 5, 3);
+                            client1.start();
+                            client2.start();
+                            client3.start();
                             break;
                         case 4:
                             Custlayout1.setVisibility(View.VISIBLE);
@@ -401,6 +407,10 @@ public class MainActivity extends AppCompatActivity {
                             client2 = new Client(cashBox, 4, 2);
                             client3 = new Client(cashBox, 5, 3);
                             client4 = new Client(cashBox, 6, 4);
+                            client1.start();
+                            client2.start();
+                            client3.start();
+                            client4.start();
                             break;
                         case 5:
                             Custlayout1.setVisibility(View.VISIBLE);
@@ -413,6 +423,11 @@ public class MainActivity extends AppCompatActivity {
                             client3 = new Client(cashBox, 5, 3);
                             client4 = new Client(cashBox, 6, 4);
                             client5 = new Client(cashBox, 7, 5);
+                            client1.start();
+                            client2.start();
+                            client3.start();
+                            client4.start();
+                            client5.start();
                             break;
                     }
                     break;

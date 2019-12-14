@@ -33,6 +33,7 @@ public class Client extends Thread {
                 synchronized (tomato) {
                     if (tomato.getQuantity() > 0) {
                         try {
+                            tomato.setQuantity(tomato.getQuantity()-1);
                             TimeUnit.SECONDS.sleep(2);
                             nextProduct = new Tomato();
                             productList[count] = "Tomato";
@@ -52,6 +53,7 @@ public class Client extends Thread {
                 synchronized (cucumber) {
                     if (cucumber.getQuantity() > 0) {
                         try {
+                            cucumber.setQuantity(cucumber.getQuantity()-1);
                             TimeUnit.SECONDS.sleep(2);
                             nextProduct = new Cucumber();
                             productList[count] = "Cucumber";
@@ -70,6 +72,7 @@ public class Client extends Thread {
                 synchronized (apple) {
                     if (apple.getQuantity() > 0) {
                         try {
+                            apple.setQuantity(apple.getQuantity()-1);
                             TimeUnit.SECONDS.sleep(2);
                             nextProduct = new Apple();
                             productList[count] = "Apple";

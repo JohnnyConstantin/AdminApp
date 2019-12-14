@@ -6,13 +6,85 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="673dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="419dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Customer1"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="445dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Welcome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Customer2"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Start"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginRight="50dp"
+                android:layout_weight="0"
+                android:background="@drawable/startday"
+                android:text="@string/Start" />
+
+            <Button
+                android:id="@+id/stack"
+                style="@android:style/Widget.Material.Light.Button.Inset"
+                android:layout_width="157dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/stack" />
+
+        </LinearLayout>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Shop</string>
+    <string name="stack">Товары</string>
+    <string name="Customer1">Клиент 1</string>
+    <string name="Customer2">Клиент 2</string>
+    <string name="Start">Начать</string>
 </resources>

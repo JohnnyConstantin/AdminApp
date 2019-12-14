@@ -9,6 +9,7 @@ interface Product {
 class Tomato implements Product{
     String name = "Tomato";
     private static int quantity;
+    public static int price = 3;
 
     @Override
     public void setQuantity(int q){
@@ -24,6 +25,7 @@ class Tomato implements Product{
 
 class Cucumber implements Product{
     String name = "Cucumber";
+    public static int price = 4;
     private static int quantity;
 
     @Override
@@ -40,6 +42,7 @@ class Cucumber implements Product{
 class Apple implements Product{
     String name = "Apple";
     private static int quantity;
+    public static int price = 5;
 
     @Override
     public void setQuantity(int q){

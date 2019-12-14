@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
     Apple apple = new Apple();
     Client client1, client2, client3, client4, client5;
 
+    int profit = 0;
+
 
 
 
@@ -107,6 +109,7 @@ public class MainActivity extends AppCompatActivity {
             public void handleMessage(Message msg) {
                 super.handleMessage(msg);
                 String text = msg.obj.toString();
+                profit += Integer.valueOf(msg.obj.toString());
                 int clnNum = msg.what;
                 switch (clnNum){
                     case 1:{
@@ -118,15 +121,15 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     }
                     case 3:{
-                        Cust3.setText("Клиент 3 сумма : "+text);
+                        Cust3.setText("Клиент 3 сумма : "+ text);
                         break;
                     }
                     case 4:{
-                        Cust4.setText("Клиент 4 сумма : "+text);
+                        Cust4.setText("Клиент 4 сумма : "+ text);
                         break;
                     }
                     case 5:{
-                        Cust5.setText("Клиент 5 сумма : "+text);
+                        Cust5.setText("Клиент 5 сумма : "+ text);
                         break;
                     }
                 }

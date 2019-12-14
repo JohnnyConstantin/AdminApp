@@ -145,37 +145,37 @@ public class MainActivity extends AppCompatActivity {
                     case 1: {
                         switch (i1) {
                             case 1: {
-                                t11.setText(text + " " + clnNum);
+                                t11.setText(text);
                                 i1++;
                                 break;
                             }
                             case 2: {
-                                t12.setText(text + " " + clnNum);
+                                t12.setText(text);
                                 i1++;
                                 break;
                             }
                             case 3: {
-                                t13.setText(text + " " + clnNum);
+                                t13.setText(text);
                                 i1++;
                                 break;
                             }
                             case 4: {
-                                t14.setText(text + " " + clnNum);
+                                t14.setText(text);
                                 i1++;
                                 break;
                             }
                             case 5: {
-                                t15.setText(text + " " + clnNum);
+                                t15.setText(text);
                                 i1++;
                                 break;
                             }
                             case 6: {
-                                t16.setText(text + " " + clnNum);
+                                t16.setText(text);
                                 i1++;
                                 break;
                             }
                             case 7: {
-                                t17.setText(text + " " + clnNum);
+                                t17.setText(text);
                                 i1++;
                                 break;
                             }
@@ -185,37 +185,37 @@ public class MainActivity extends AppCompatActivity {
                     case 2:{
                         switch (i2){
                             case 1:{
-                                t21.setText(text + " " + clnNum);
+                                t21.setText(text);
                                 i2++;
                                 break;
                             }
                             case 2:{
-                                t22.setText(text + " " + clnNum);
+                                t22.setText(text);
                                 i2++;
                                 break;
                             }
                             case 3:{
-                                t23.setText(text + " " + clnNum);
+                                t23.setText(text);
                                 i1++;
                                 break;
                             }
                             case 4:{
-                                t24.setText(text + " " + clnNum);
+                                t24.setText(text);
                                 i2++;
                                 break;
                             }
                             case 5:{
-                                t25.setText(text + " " + clnNum);
+                                t25.setText(text);
                                 i2++;
                                 break;
                             }
                             case 6:{
-                                t26.setText(text + " " + clnNum);
+                                t26.setText(text);
                                 i2++;
                                 break;
                             }
                             case 7:{
-                                t27.setText(text + " " + clnNum);
+                                t27.setText(text);
                                 i2++;
                                 break;
                             }
@@ -225,37 +225,37 @@ public class MainActivity extends AppCompatActivity {
                     case 3:{
                         switch (i3){
                             case 1:{
-                                t31.setText(text + " " + clnNum);
+                                t31.setText(text);
                                 i3++;
                                 break;
                             }
                             case 2:{
-                                t32.setText(text + " " + clnNum);
+                                t32.setText(text);
                                 i3++;
                                 break;
                             }
                             case 3:{
-                                t33.setText(text + " " + clnNum);
+                                t33.setText(text);
                                 i3++;
                                 break;
                             }
                             case 4:{
-                                t34.setText(text + " " + clnNum);
+                                t34.setText(text);
                                 i1++;
                                 break;
                             }
                             case 5:{
-                                t35.setText(text + " " + clnNum);
+                                t35.setText(text);
                                 i1++;
                                 break;
                             }
                             case 6:{
-                                t36.setText(text + " " + clnNum);
+                                t36.setText(text);
                                 i1++;
                                 break;
                             }
                             case 7:{
-                                t37.setText(text + " " + clnNum);
+                                t37.setText(text);
                                 i3++;
                                 break;
                             }
@@ -265,37 +265,37 @@ public class MainActivity extends AppCompatActivity {
                     case 4:{
                         switch (i4){
                             case 1:{
-                                t41.setText(text + " " + msg.what);
+                                t41.setText(text);
                                 i4++;
                                 break;
                             }
                             case 2:{
-                                t42.setText(text + " " + msg.what);
+                                t42.setText(text);
                                 i4++;
                                 break;
                             }
                             case 3:{
-                                t43.setText(text + " " + msg.what);
+                                t43.setText(text);
                                 i4++;
                                 break;
                             }
                             case 4:{
-                                t44.setText(text + " " + msg.what);
+                                t44.setText(text);
                                 i4++;
                                 break;
                             }
                             case 5:{
-                                t45.setText(text + " " + msg.what);
+                                t45.setText(text);
                                 i4++;
                                 break;
                             }
                             case 6:{
-                                t46.setText(text + " " + msg.what);
+                                t46.setText(text);
                                 i4++;
                                 break;
                             }
                             case 7:{
-                                t47.setText(text + " " + msg.what);
+                                t47.setText(text);
                                 i4++;
                                 break;
                             }
@@ -305,37 +305,37 @@ public class MainActivity extends AppCompatActivity {
                     case 5:{
                         switch (i5){
                             case 1:{
-                                t51.setText(text + " " + msg.what);
+                                t51.setText(text);
                                 i5++;
                                 break;
                             }
                             case 2:{
-                                t52.setText(text + " " + msg.what);
+                                t52.setText(text);
                                 i5++;
                                 break;
                             }
                             case 3:{
-                                t53.setText(text + " " + msg.what);
+                                t53.setText(text);
                                 i5++;
                                 break;
                             }
                             case 4:{
-                                t54.setText(text + " " + msg.what);
+                                t54.setText(text);
                                 i5++;
                                 break;
                             }
                             case 5:{
-                                t55.setText(text + " " + msg.what);
+                                t55.setText(text);
                                 i5++;
                                 break;
                             }
                             case 6:{
-                                t56.setText(text + " " + msg.what);
+                                t56.setText(text);
                                 i5++;
                                 break;
                             }
                             case 7:{
-                                t57.setText(text + " " + msg.what);
+                                t57.setText(text);
                                 i5++;
                                 break;
                             }

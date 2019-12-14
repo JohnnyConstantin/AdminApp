@@ -15,11 +15,13 @@ public class Client extends Thread {
     Tomato tomato;
     Apple apple;
     Cucumber cucumber;
+    int number;
 
-    public Client(CashBox cash, int maxProducts){
+    public Client(CashBox cash, int maxProducts, int number){
         cashBox = cash;
         this.maxProducts = maxProducts;
         this.productList = new String[maxProducts];
+        this.number = number;
     }
 
     @Override
@@ -42,6 +44,7 @@ public class Client extends Thread {
                             MainActivity.handler1.sendEmptyMessage(moneyToPay);
                             Message msg = new Message();
                             msg.obj = "Tomato";
+                            msg.what = this.number;
                             MainActivity.handler2.sendMessage(msg);
                         } catch (InterruptedException e) {
                             e.printStackTrace();
@@ -62,6 +65,7 @@ public class Client extends Thread {
                             MainActivity.handler1.sendEmptyMessage(moneyToPay);
                             Message msg = new Message();
                             msg.obj = "Cucumber";
+                            msg.what = this.number;
                             MainActivity.handler2.sendMessage(msg);
                         } catch (InterruptedException e) {
                             e.printStackTrace();
@@ -81,6 +85,7 @@ public class Client extends Thread {
                             MainActivity.handler1.sendEmptyMessage(moneyToPay);
                             Message msg = new Message();
                             msg.obj = "Apple";
+                            msg.what = this.number;
                             MainActivity.handler2.sendMessage(msg);
                         } catch (InterruptedException e) {
                             e.printStackTrace();

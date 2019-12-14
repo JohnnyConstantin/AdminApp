@@ -1,50 +1,53 @@
 package com.example.shop;
 
-abstract class Product {
-    abstract void setQuantity(int q);
+interface Product {
+     void setQuantity(int q);
 
-    abstract int getQuantity();
+     int getQuantity();
 }
 
-class Tomato extends Product{
+class Tomato implements Product{
+    String name = "Tomato";
     private static int quantity;
 
     @Override
-    void setQuantity(int q){
+    public void setQuantity(int q){
         quantity = q;
     }
 
     @Override
-    int getQuantity(){
+    public int getQuantity(){
         return quantity;
     }
 }
 
 
-class Cucumber extends Product{
+class Cucumber implements Product{
+    String name = "Cucumber";
     private static int quantity;
 
     @Override
-    void setQuantity(int q){
+    public void setQuantity(int q){
         quantity = q;
     }
 
     @Override
-    int getQuantity(){
+    public int getQuantity(){
         return quantity;
     }
 }
 
-class Apple extends Product{
+class Apple implements Product{
+    String name = "Apple";
     private static int quantity;
 
     @Override
-    void setQuantity(int q){
+    public void setQuantity(int q){
         quantity = q;
     }
 
     @Override
-    int getQuantity(){
+    public int getQuantity(){
         return quantity;
     }
 }

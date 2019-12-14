@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void handleMessage(Message msg) {
                 super.handleMessage(msg);
-                String text = String.valueOf(msg.what);
+                String text = msg.obj.toString();
                 int clnNum = msg.what;
 
             }

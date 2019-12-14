@@ -1,5 +1,8 @@
 package com.example.shop;
 
+import android.os.Message;
+import android.view.textclassifier.ConversationActions;
+
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
@@ -35,6 +38,10 @@ public class Client extends Thread {
                             productList[count] = "Tomato";
                             count++;
                             moneyToPay += Tomato.price;
+                            MainActivity.handler1.sendEmptyMessage(moneyToPay);
+                            Message msg = new Message();
+                            msg.obj = "Tomato";
+                            MainActivity.handler2.sendMessage(msg);
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }
@@ -50,6 +57,10 @@ public class Client extends Thread {
                             productList[count] = "Cucumber";
                             count++;
                             moneyToPay += Cucumber.price;
+                            MainActivity.handler1.sendEmptyMessage(moneyToPay);
+                            Message msg = new Message();
+                            msg.obj = "Cucumber";
+                            MainActivity.handler2.sendMessage(msg);
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }
@@ -64,6 +75,10 @@ public class Client extends Thread {
                             productList[count] = "Apple";
                             count++;
                             moneyToPay += Apple.price;
+                            MainActivity.handler1.sendEmptyMessage(moneyToPay);
+                            Message msg = new Message();
+                            msg.obj = "Apple";
+                            MainActivity.handler2.sendMessage(msg);
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }

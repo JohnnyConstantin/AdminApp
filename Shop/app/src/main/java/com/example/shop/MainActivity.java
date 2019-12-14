@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -19,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     Button Start, Stack;
+    static Handler handler1, handler2;
     TextView Customer1;
     LinearLayout Custlayout1, Custlayout2, Custlayout3, Custlayout4, Custlayout5;
     @Override
@@ -46,6 +49,24 @@ public class MainActivity extends AppCompatActivity {
         Customer1 = (TextView) findViewById(R.id.Cust1);
         Start = (Button) findViewById(R.id.Start);
         Stack = (Button) findViewById(R.id.stack);
+
+        // handler для общей стоимости товаров
+        handler1 = new Handler(){
+            @Override
+            public void handleMessage(Message msg) {
+                super.handleMessage(msg);
+
+            }
+        };
+
+        // handler для списка товаров
+        handler2 = new Handler(){
+            @Override
+            public void handleMessage(Message msg) {
+                super.handleMessage(msg);
+
+            }
+        };
 
 
    View.OnClickListener listener = new View.OnClickListener() {
@@ -127,8 +148,6 @@ public class MainActivity extends AppCompatActivity {
         Stack.setOnClickListener(listener);
     }
 }
-
-
 
 
 

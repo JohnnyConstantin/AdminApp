@@ -7,18 +7,18 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="361dp"
+        android:layout_height="642dp"
+        android:background="#535353"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="#535353">
+        app:layout_constraintTop_toTopOf="parent">
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="616dp">
+            android:layout_height="569dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -46,43 +46,43 @@
                         android:id="@+id/t11"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorBack"/>
+                        android:background="@color/colorBack" />
 
                     <TextView
                         android:id="@+id/t12"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorBack"/>
+                        android:background="@color/colorBack" />
 
                     <TextView
                         android:id="@+id/t13"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorBack"/>
+                        android:background="@color/colorBack" />
 
                     <TextView
                         android:id="@+id/t14"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorBack"/>
+                        android:background="@color/colorBack" />
 
                     <TextView
                         android:id="@+id/t15"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorBack"/>
+                        android:background="@color/colorBack" />
 
                     <TextView
                         android:id="@+id/t16"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorBack"/>
+                        android:background="@color/colorBack" />
 
                     <TextView
                         android:id="@+id/t17"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorBack"/>
+                        android:background="@color/colorBack" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -96,52 +96,52 @@
                         android:id="@+id/Cust2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="#9E9E9E"
                         android:text="@string/Customer2"
                         android:textColor="#000000"
-                        android:textSize="24sp"
-                        android:background="#9E9E9E"/>
+                        android:textSize="24sp" />
 
                     <TextView
                         android:id="@+id/t21"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorBack"/>
+                        android:background="@color/colorBack" />
 
                     <TextView
                         android:id="@+id/t22"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorBack"/>
+                        android:background="@color/colorBack" />
 
                     <TextView
                         android:id="@+id/t23"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorBack"/>
+                        android:background="@color/colorBack" />
 
                     <TextView
                         android:id="@+id/t24"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorBack"/>
+                        android:background="@color/colorBack" />
 
                     <TextView
                         android:id="@+id/t25"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorBack"/>
+                        android:background="@color/colorBack" />
 
                     <TextView
                         android:id="@+id/t26"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorBack"/>
+                        android:background="@color/colorBack" />
 
                     <TextView
                         android:id="@+id/t27"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorBack"/>
+                        android:background="@color/colorBack" />
 
                 </LinearLayout>
 
@@ -156,52 +156,52 @@
                         android:id="@+id/Cust3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="#9E9E9E"
                         android:text="@string/Customer3"
                         android:textColor="#000000"
-                        android:textSize="24sp"
-                        android:background="#9E9E9E"/>
+                        android:textSize="24sp" />
 
                     <TextView
                         android:id="@+id/t31"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorBack"/>
+                        android:background="@color/colorBack" />
 
                     <TextView
                         android:id="@+id/t32"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorBack"/>
+                        android:background="@color/colorBack" />
 
                     <TextView
                         android:id="@+id/t33"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorBack"/>
+                        android:background="@color/colorBack" />
 
                     <TextView
                         android:id="@+id/t34"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorBack"/>
+                        android:background="@color/colorBack" />
 
                     <TextView
                         android:id="@+id/t35"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorBack"/>
+                        android:background="@color/colorBack" />
 
                     <TextView
                         android:id="@+id/t36"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorBack"/>
+                        android:background="@color/colorBack" />
 
                     <TextView
                         android:id="@+id/t37"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorBack"/>
+                        android:background="@color/colorBack" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -215,52 +215,52 @@
                         android:id="@+id/Cust4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="#9E9E9E"
                         android:text="@string/Customer4"
                         android:textColor="#000000"
-                        android:textSize="24sp"
-                        android:background="#9E9E9E"/>
+                        android:textSize="24sp" />
 
                     <TextView
                         android:id="@+id/t41"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorBack"/>
+                        android:background="@color/colorBack" />
 
                     <TextView
                         android:id="@+id/t42"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorBack"/>
+                        android:background="@color/colorBack" />
 
                     <TextView
                         android:id="@+id/t43"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorBack"/>
+                        android:background="@color/colorBack" />
 
                     <TextView
                         android:id="@+id/t44"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorBack"/>
+                        android:background="@color/colorBack" />
 
                     <TextView
                         android:id="@+id/t45"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorBack"/>
+                        android:background="@color/colorBack" />
 
                     <TextView
                         android:id="@+id/t46"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorBack"/>
+                        android:background="@color/colorBack" />
 
                     <TextView
                         android:id="@+id/t47"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorBack"/>
+                        android:background="@color/colorBack" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -274,52 +274,52 @@
                         android:id="@+id/Cust5"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="#9E9E9E"
                         android:text="@string/Customer5"
                         android:textColor="#000000"
-                        android:textSize="24sp"
-                        android:background="#9E9E9E"/>
+                        android:textSize="24sp" />
 
                     <TextView
                         android:id="@+id/t51"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorBack"/>
+                        android:background="@color/colorBack" />
 
                     <TextView
                         android:id="@+id/t52"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorBack"/>
+                        android:background="@color/colorBack" />
 
                     <TextView
                         android:id="@+id/t53"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorBack"/>
+                        android:background="@color/colorBack" />
 
                     <TextView
                         android:id="@+id/t54"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorBack"/>
+                        android:background="@color/colorBack" />
 
                     <TextView
                         android:id="@+id/t55"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorBack"/>
+                        android:background="@color/colorBack" />
 
                     <TextView
                         android:id="@+id/t56"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorBack"/>
+                        android:background="@color/colorBack" />
 
                     <TextView
                         android:id="@+id/t57"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorBack"/>
+                        android:background="@color/colorBack" />
                 </LinearLayout>
 
             </LinearLayout>

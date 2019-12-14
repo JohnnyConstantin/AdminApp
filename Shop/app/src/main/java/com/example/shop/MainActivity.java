@@ -149,36 +149,43 @@ public class MainActivity extends AppCompatActivity {
                         switch (i1) {
                             case 1: {
                                 t11.setText(text);
+                                t11.setBackgroundColor(getColor(R.color.colorBack));
                                 i1++;
                                 break;
                             }
                             case 2: {
                                 t12.setText(text);
+                                t12.setBackgroundColor(getColor(R.color.colorBack));
                                 i1++;
                                 break;
                             }
                             case 3: {
                                 t13.setText(text);
+                                t13.setBackgroundColor(getColor(R.color.colorBack));
                                 i1++;
                                 break;
                             }
                             case 4: {
                                 t14.setText(text);
+                                t14.setBackgroundColor(getColor(R.color.colorBack));
                                 i1++;
                                 break;
                             }
                             case 5: {
                                 t15.setText(text);
+                                t15.setBackgroundColor(getColor(R.color.colorBack));
                                 i1++;
                                 break;
                             }
                             case 6: {
                                 t16.setText(text);
+                                t16.setBackgroundColor(getColor(R.color.colorBack));
                                 i1++;
                                 break;
                             }
                             case 7: {
                                 t17.setText(text);
+                                t17.setBackgroundColor(getColor(R.color.colorBack));
                                 i1++;
                                 break;
                             }
@@ -189,36 +196,43 @@ public class MainActivity extends AppCompatActivity {
                         switch (i2){
                             case 1:{
                                 t21.setText(text);
+                                t21.setBackgroundColor(getColor(R.color.colorBack));
                                 i2++;
                                 break;
                             }
                             case 2:{
                                 t22.setText(text);
+                                t22.setBackgroundColor(getColor(R.color.colorBack));
                                 i2++;
                                 break;
                             }
                             case 3:{
                                 t23.setText(text);
+                                t23.setBackgroundColor(getColor(R.color.colorBack));
                                 i2++;
                                 break;
                             }
                             case 4:{
                                 t24.setText(text);
+                                t24.setBackgroundColor(getColor(R.color.colorBack));
                                 i2++;
                                 break;
                             }
                             case 5:{
                                 t25.setText(text);
+                                t25.setBackgroundColor(getColor(R.color.colorBack));
                                 i2++;
                                 break;
                             }
                             case 6:{
                                 t26.setText(text);
+                                t26.setBackgroundColor(getColor(R.color.colorBack));
                                 i2++;
                                 break;
                             }
                             case 7:{
                                 t27.setText(text);
+                                t27.setBackgroundColor(getColor(R.color.colorBack));
                                 i2++;
                                 break;
                             }
@@ -229,36 +243,43 @@ public class MainActivity extends AppCompatActivity {
                         switch (i3){
                             case 1:{
                                 t31.setText(text);
+                                t31.setBackgroundColor(getColor(R.color.colorBack));
                                 i3++;
                                 break;
                             }
                             case 2:{
                                 t32.setText(text);
+                                t32.setBackgroundColor(getColor(R.color.colorBack));
                                 i3++;
                                 break;
                             }
                             case 3:{
                                 t33.setText(text);
+                                t33.setBackgroundColor(getColor(R.color.colorBack));
                                 i3++;
                                 break;
                             }
                             case 4:{
                                 t34.setText(text);
+                                t34.setBackgroundColor(getColor(R.color.colorBack));
                                 i3++;
                                 break;
                             }
                             case 5:{
                                 t35.setText(text);
+                                t35.setBackgroundColor(getColor(R.color.colorBack));
                                 i3++;
                                 break;
                             }
                             case 6:{
                                 t36.setText(text);
+                                t36.setBackgroundColor(getColor(R.color.colorBack));
                                 i3++;
                                 break;
                             }
                             case 7:{
                                 t37.setText(text);
+                                t37.setBackgroundColor(getColor(R.color.colorBack));
                                 i3++;
                                 break;
                             }
@@ -269,36 +290,43 @@ public class MainActivity extends AppCompatActivity {
                         switch (i4){
                             case 1:{
                                 t41.setText(text);
+                                t41.setBackgroundColor(getColor(R.color.colorBack));
                                 i4++;
                                 break;
                             }
                             case 2:{
                                 t42.setText(text);
+                                t42.setBackgroundColor(getColor(R.color.colorBack));
                                 i4++;
                                 break;
                             }
                             case 3:{
                                 t43.setText(text);
+                                t43.setBackgroundColor(getColor(R.color.colorBack));
                                 i4++;
                                 break;
                             }
                             case 4:{
                                 t44.setText(text);
+                                t44.setBackgroundColor(getColor(R.color.colorBack));
                                 i4++;
                                 break;
                             }
                             case 5:{
                                 t45.setText(text);
+                                t45.setBackgroundColor(getColor(R.color.colorBack));
                                 i4++;
                                 break;
                             }
                             case 6:{
                                 t46.setText(text);
+                                t46.setBackgroundColor(getColor(R.color.colorBack));
                                 i4++;
                                 break;
                             }
                             case 7:{
                                 t47.setText(text);
+                                t47.setBackgroundColor(getColor(R.color.colorBack));
                                 i4++;
                                 break;
                             }
@@ -309,36 +337,43 @@ public class MainActivity extends AppCompatActivity {
                         switch (i5){
                             case 1:{
                                 t51.setText(text);
+                                t51.setBackgroundColor(getColor(R.color.colorBack));
                                 i5++;
                                 break;
                             }
                             case 2:{
                                 t52.setText(text);
+                                t52.setBackgroundColor(getColor(R.color.colorBack));
                                 i5++;
                                 break;
                             }
                             case 3:{
                                 t53.setText(text);
+                                t53.setBackgroundColor(getColor(R.color.colorBack));
                                 i5++;
                                 break;
                             }
                             case 4:{
                                 t54.setText(text);
+                                t54.setBackgroundColor(getColor(R.color.colorBack));
                                 i5++;
                                 break;
                             }
                             case 5:{
                                 t55.setText(text);
+                                t55.setBackgroundColor(getColor(R.color.colorBack));
                                 i5++;
                                 break;
                             }
                             case 6:{
                                 t56.setText(text);
+                                t56.setBackgroundColor(getColor(R.color.colorBack));
                                 i5++;
                                 break;
                             }
                             case 7:{
                                 t57.setText(text);
+                                t57.setBackgroundColor(getColor(R.color.colorBack));
                                 i5++;
                                 break;
                             }

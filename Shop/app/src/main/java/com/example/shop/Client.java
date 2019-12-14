@@ -35,7 +35,7 @@ public class Client extends Thread {
                     if (tomato.getQuantity() > 0) {
                         try {
                             tomato.setQuantity(tomato.getQuantity()-1);
-                            TimeUnit.SECONDS.sleep(2);
+                            TimeUnit.SECONDS.sleep(1);
                             nextProduct = new Tomato();
                             productList[count] = "Tomato";
                             count++;
@@ -43,17 +43,16 @@ public class Client extends Thread {
                             Message msg = new Message();
                             msg.obj = String.valueOf(moneyToPay);
                             msg.what = this.number;
-                            TimeUnit.SECONDS.sleep(2);
+                            TimeUnit.SECONDS.sleep(1);
                             MainActivity.handler1.sendMessage(msg);
                             Message msg2 = new Message();
                             msg2.obj = "Tomato";
                             msg2.what = this.number;
-                            TimeUnit.SECONDS.sleep(2);
+                            TimeUnit.SECONDS.sleep(1);
                             MainActivity.handler2.sendMessage(msg2);
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }
-
                     }
                 }
             } else if (x == 2) {
@@ -61,7 +60,7 @@ public class Client extends Thread {
                     if (cucumber.getQuantity() > 0) {
                         try {
                             cucumber.setQuantity(cucumber.getQuantity()-1);
-                            TimeUnit.SECONDS.sleep(2);
+                            TimeUnit.SECONDS.sleep(1);
                             nextProduct = new Cucumber();
                             productList[count] = "Cucumber";
                             count++;
@@ -69,12 +68,12 @@ public class Client extends Thread {
                             Message msg = new Message();
                             msg.obj = String.valueOf(moneyToPay);
                             msg.what = this.number;
-                            TimeUnit.SECONDS.sleep(2);
+                            TimeUnit.SECONDS.sleep(1);
                             MainActivity.handler1.sendMessage(msg);
                             Message msg2 = new Message();
                             msg2.obj = "Cucumber";
                             msg2.what = this.number;
-                            TimeUnit.SECONDS.sleep(2);
+                            TimeUnit.SECONDS.sleep(1);
                             MainActivity.handler2.sendMessage(msg2);
                         } catch (InterruptedException e) {
                             e.printStackTrace();
@@ -86,7 +85,7 @@ public class Client extends Thread {
                     if (apple.getQuantity() > 0) {
                         try {
                             apple.setQuantity(apple.getQuantity()-1);
-                            TimeUnit.SECONDS.sleep(2);
+                            TimeUnit.SECONDS.sleep(1);
                             nextProduct = new Apple();
                             productList[count] = "Apple";
                             count++;
@@ -94,12 +93,12 @@ public class Client extends Thread {
                             Message msg = new Message();
                             msg.obj = String.valueOf(moneyToPay);
                             msg.what = this.number;
-                            TimeUnit.SECONDS.sleep(3);
+                            TimeUnit.SECONDS.sleep(1);
                             MainActivity.handler1.sendMessage(msg);
                             Message msg2 = new Message();
                             msg2.obj = "Apple";
                             msg2.what = this.number;
-                            TimeUnit.SECONDS.sleep(3);
+                            TimeUnit.SECONDS.sleep(1);
                             MainActivity.handler2.sendMessage(msg2);
                         } catch (InterruptedException e) {
                             e.printStackTrace();

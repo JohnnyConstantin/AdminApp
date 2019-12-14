@@ -110,11 +110,11 @@ public class MainActivity extends AppCompatActivity {
                 int clnNum = msg.what;
                 switch (clnNum){
                     case 1:{
-                        Cust1.setText("Клиент 1 сумма : "+text);
+                        Cust1.setText("Клиент 1 сумма : "+ text);
                         break;
                     }
                     case 2:{
-                        Cust2.setText("Клиент 2 сумма : "+text);
+                        Cust2.setText("Клиент 2 сумма : "+ text);
                         break;
                     }
                     case 3:{

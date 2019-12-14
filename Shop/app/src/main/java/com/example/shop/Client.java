@@ -11,9 +11,9 @@ public class Client extends Thread {
     int maxProducts;
     String[] productList;
     Product nextProduct;
-    Tomato tomato;
-    Apple apple;
-    Cucumber cucumber;
+    Tomato tomato = new Tomato();
+    Apple apple = new Apple();
+    Cucumber cucumber = new Cucumber();
     int number;
 
     public Client(CashBox cash, int maxProducts, int number){
@@ -43,9 +43,13 @@ public class Client extends Thread {
                             Message msg = new Message();
                             msg.obj = String.valueOf(moneyToPay);
                             msg.what = this.number;
+                            TimeUnit.SECONDS.sleep(2);
                             MainActivity.handler1.sendMessage(msg);
-                            msg.obj = "Tomato";
-                            MainActivity.handler2.sendMessage(msg);
+                            Message msg2 = new Message();
+                            msg2.obj = "Tomato";
+                            msg2.what = this.number;
+                            TimeUnit.SECONDS.sleep(2);
+                            MainActivity.handler2.sendMessage(msg2);
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }
@@ -65,9 +69,13 @@ public class Client extends Thread {
                             Message msg = new Message();
                             msg.obj = String.valueOf(moneyToPay);
                             msg.what = this.number;
+                            TimeUnit.SECONDS.sleep(2);
                             MainActivity.handler1.sendMessage(msg);
-                            msg.obj = "Cucumber";
-                            MainActivity.handler2.sendMessage(msg);
+                            Message msg2 = new Message();
+                            msg2.obj = "Cucumber";
+                            msg2.what = this.number;
+                            TimeUnit.SECONDS.sleep(2);
+                            MainActivity.handler2.sendMessage(msg2);
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }
@@ -86,9 +94,13 @@ public class Client extends Thread {
                             Message msg = new Message();
                             msg.obj = String.valueOf(moneyToPay);
                             msg.what = this.number;
+                            TimeUnit.SECONDS.sleep(3);
                             MainActivity.handler1.sendMessage(msg);
-                            msg.obj = "Apple";
-                            MainActivity.handler2.sendMessage(msg);
+                            Message msg2 = new Message();
+                            msg2.obj = "Apple";
+                            msg2.what = this.number;
+                            TimeUnit.SECONDS.sleep(3);
+                            MainActivity.handler2.sendMessage(msg2);
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }
@@ -100,7 +112,7 @@ public class Client extends Thread {
             synchronized (cashBox) {
                 if (cashBox.getStatus()) {
                     try {
-                        TimeUnit.SECONDS.sleep(5);
+                        TimeUnit.SECONDS.sleep(3);
 
                     } catch (InterruptedException e) {
                         e.printStackTrace();

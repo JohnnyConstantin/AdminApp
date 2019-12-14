@@ -28,12 +28,13 @@
                 android:orientation="vertical">
 
                 <LinearLayout
+                    android:id="@+id/Custlayout1"
                     android:layout_width="match_parent"
                     android:layout_height="419dp"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/Customer1"
+                        android:id="@+id/Cust1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/Customer1"
@@ -54,6 +55,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/Custlayout2"
                     android:layout_width="match_parent"
                     android:layout_height="445dp"
                     android:orientation="vertical">
@@ -69,6 +71,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/Custlayout3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
@@ -81,6 +84,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/Custlayout4"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
@@ -93,6 +97,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/Custlayout5"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">

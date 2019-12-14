@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void handleMessage(Message msg) {
                 super.handleMessage(msg);
+                String text = String.valueOf(msg.what);
 
             }
         };
@@ -64,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void handleMessage(Message msg) {
                 super.handleMessage(msg);
-
+                String text = msg.obj.toString();
             }
         };
 

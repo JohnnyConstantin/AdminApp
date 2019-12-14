@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-                            client1 = new Client(cashBox, 3);
+                            client1 = new Client(cashBox, 3, 1);
 
                             break;
                         case 2:
@@ -106,8 +106,8 @@ public class MainActivity extends AppCompatActivity {
                             Custlayout3.setVisibility(View.GONE);
                             Custlayout4.setVisibility(View.GONE);
                             Custlayout5.setVisibility(View.GONE);
-                            client1 = new Client(cashBox, 3);
-                            client2 = new Client(cashBox, 4);
+                            client1 = new Client(cashBox, 3, 1);
+                            client2 = new Client(cashBox, 4, 2);
                             break;
                         case 3:
                             Custlayout1.setVisibility(View.VISIBLE);
@@ -115,9 +115,9 @@ public class MainActivity extends AppCompatActivity {
                             Custlayout3.setVisibility(View.VISIBLE);
                             Custlayout4.setVisibility(View.GONE);
                             Custlayout5.setVisibility(View.GONE);
-                            client1 = new Client(cashBox, 3);
-                            client2 = new Client(cashBox, 4);
-                            client3 = new Client(cashBox, 5);
+                            client1 = new Client(cashBox, 3, 1);
+                            client2 = new Client(cashBox, 4, 2);
+                            client3 = new Client(cashBox, 5, 3);
                             break;
                         case 4:
                             Custlayout1.setVisibility(View.VISIBLE);
@@ -125,10 +125,10 @@ public class MainActivity extends AppCompatActivity {
                             Custlayout3.setVisibility(View.VISIBLE);
                             Custlayout4.setVisibility(View.VISIBLE);
                             Custlayout5.setVisibility(View.GONE);
-                            client1 = new Client(cashBox, 3);
-                            client2 = new Client(cashBox, 4);
-                            client3 = new Client(cashBox, 5);
-                            client4 = new Client(cashBox, 6);
+                            client1 = new Client(cashBox, 3, 1);
+                            client2 = new Client(cashBox, 4, 2);
+                            client3 = new Client(cashBox, 5, 3);
+                            client4 = new Client(cashBox, 6, 4);
                             break;
                         case 5:
                             Custlayout1.setVisibility(View.VISIBLE);
@@ -136,11 +136,11 @@ public class MainActivity extends AppCompatActivity {
                             Custlayout3.setVisibility(View.VISIBLE);
                             Custlayout4.setVisibility(View.VISIBLE);
                             Custlayout5.setVisibility(View.VISIBLE);
-                            client1 = new Client(cashBox, 3);
-                            client2 = new Client(cashBox, 4);
-                            client3 = new Client(cashBox, 5);
-                            client4 = new Client(cashBox, 6);
-                            client5 = new Client(cashBox, 7);
+                            client1 = new Client(cashBox, 3, 1);
+                            client2 = new Client(cashBox, 4, 2);
+                            client3 = new Client(cashBox, 5, 3);
+                            client4 = new Client(cashBox, 6, 4);
+                            client5 = new Client(cashBox, 7, 5);
                             break;
                     }
                     break;

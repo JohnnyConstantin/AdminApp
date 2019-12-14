@@ -12,6 +12,7 @@ public class Client extends Thread {
     Tomato tomato;
     Apple apple;
     Cucumber cucumber;
+    boolean running = true;
 
     public Client(CashBox cash, int maxProducts){
         cashBox = cash;
@@ -20,15 +21,15 @@ public class Client extends Thread {
     }
 
     @Override
-    public void run(){
+    public void run() {
         int count = 0;
         Random random = new Random();
 
-        while (this.productList[maxProducts - 1] == null){
+        while (this.productList[maxProducts - 1] == null) {
             int x = random.nextInt() % 3 + 1;
-            if(x == 1){
+            if (x == 1) {
                 synchronized (tomato) {
-                    if(tomato.getQuantity() > 0) {
+                    if (tomato.getQuantity() > 0) {
                         try {
                             TimeUnit.SECONDS.sleep(2);
                             nextProduct = new Tomato();
@@ -41,9 +42,9 @@ public class Client extends Thread {
 
                     }
                 }
-            }else if(x == 2){
+            } else if (x == 2) {
                 synchronized (cucumber) {
-                    if(cucumber.getQuantity() > 0) {
+                    if (cucumber.getQuantity() > 0) {
                         try {
                             TimeUnit.SECONDS.sleep(2);
                             nextProduct = new Cucumber();
@@ -55,9 +56,9 @@ public class Client extends Thread {
                         }
                     }
                 }
-            }else {
+            } else {
                 synchronized (apple) {
-                    if(apple.getQuantity() > 0) {
+                    if (apple.getQuantity() > 0) {
                         try {
                             TimeUnit.SECONDS.sleep(2);
                             nextProduct = new Apple();
@@ -73,24 +74,27 @@ public class Client extends Thread {
         }
 
 
-        synchronized (cashBox){
-            if(cashBox.getStatus()){
-                try {
-                    TimeUnit.SECONDS.sleep(5);
+        while (this.moneyToPay > 0) {
+            synchronized (cashBox) {
+                if (cashBox.getStatus()) {
+                    try {
+                        TimeUnit.SECONDS.sleep(5);
 
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }else{
-                cashBox.setStatus(true);
-                try {
-                    TimeUnit.SECONDS.sleep(2);
-                    cashBox.setStatus(false);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                } else {
+                    cashBox.setStatus(true);
+                    try {
+                        TimeUnit.SECONDS.sleep(2);
+                        this.moneyToPay = 0;
+                        this.running = false;
+                        cashBox.setStatus(false);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                 }
             }
-
         }
     }
 

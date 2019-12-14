@@ -196,7 +196,7 @@ public class MainActivity extends AppCompatActivity {
                             }
                             case 3:{
                                 t23.setText(text);
-                                i1++;
+                                i2++;
                                 break;
                             }
                             case 4:{
@@ -241,17 +241,17 @@ public class MainActivity extends AppCompatActivity {
                             }
                             case 4:{
                                 t34.setText(text);
-                                i1++;
+                                i3++;
                                 break;
                             }
                             case 5:{
                                 t35.setText(text);
-                                i1++;
+                                i3++;
                                 break;
                             }
                             case 6:{
                                 t36.setText(text);
-                                i1++;
+                                i3++;
                                 break;
                             }
                             case 7:{

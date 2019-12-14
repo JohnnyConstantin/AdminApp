@@ -412,6 +412,3 @@ public class MainActivity extends AppCompatActivity {
         Stack.setOnClickListener(listener);
     }
 }
-
-
-

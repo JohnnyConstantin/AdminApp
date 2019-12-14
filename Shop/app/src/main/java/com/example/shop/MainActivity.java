@@ -20,10 +20,14 @@ public class MainActivity extends AppCompatActivity {
     Client client1, client2, client3, client4, client5;
 
 
+
+
     Button Start, Stack;
     static Handler handler1, handler2;
-    TextView Customer1;
+    TextView Customer1, t11, t12, t13, t14, t15, t16, t17, t21, t22, t23, t24, t25, t26, t27, t31,
+            t32, t33, t34, t35, t36, t37, t41, t42, t43, t44, t45, t46, t47, t51, t52, t53, t54, t55, t56, t57;
     LinearLayout Custlayout1, Custlayout2, Custlayout3, Custlayout4, Custlayout5;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

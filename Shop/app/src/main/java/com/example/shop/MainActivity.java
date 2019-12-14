@@ -2,6 +2,7 @@ package com.example.shop;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -121,37 +122,37 @@ public class MainActivity extends AppCompatActivity {
                     case 1: {
                         switch (i1) {
                             case 1: {
-                                t11.setText(msg.obj + " " + msg.what);
+                                t11.setText(msg.obj + "                     " + msg.what);
                                 i1++;
                                 break;
                             }
                             case 2: {
-                                t12.setText(msg.obj + " " + msg.what);
+                                t12.setText(msg.obj + "                     " + msg.what);
                                 i1++;
                                 break;
                             }
                             case 3: {
-                                t13.setText(msg.obj + " " + msg.what);
+                                t13.setText(msg.obj + "                      " + msg.what);
                                 i1++;
                                 break;
                             }
                             case 4: {
-                                t14.setText(msg.obj + " " + msg.what);
+                                t14.setText(msg.obj + "                      " + msg.what);
                                 i1++;
                                 break;
                             }
                             case 5: {
-                                t15.setText(msg.obj + " " + msg.what);
+                                t15.setText(msg.obj + "                      " + msg.what);
                                 i1++;
                                 break;
                             }
                             case 6: {
-                                t16.setText(msg.obj + " " + msg.what);
+                                t16.setText(msg.obj + "                      " + msg.what);
                                 i1++;
                                 break;
                             }
                             case 7: {
-                                t17.setText(msg.obj + " " + msg.what);
+                                t17.setText(msg.obj + "                      " + msg.what);
                                 i1++;
                                 break;
                             }
@@ -161,37 +162,37 @@ public class MainActivity extends AppCompatActivity {
                     case 2:{
                         switch (i2){
                             case 1:{
-                                t21.setText(msg.obj + " " + msg.what);
+                                t21.setText(msg.obj + "                      " + msg.what);
                                 i2++;
                                 break;
                             }
                             case 2:{
-                                t22.setText(msg.obj + " " + msg.what);
+                                t22.setText(msg.obj + "                      " + msg.what);
                                 i2++;
                                 break;
                             }
                             case 3:{
-                                t23.setText(msg.obj + " " + msg.what);
+                                t23.setText(msg.obj + "                      " + msg.what);
                                 i1++;
                                 break;
                             }
                             case 4:{
-                                t24.setText(msg.obj + " " + msg.what);
+                                t24.setText(msg.obj + "                      " + msg.what);
                                 i2++;
                                 break;
                             }
                             case 5:{
-                                t25.setText(msg.obj + " " + msg.what);
+                                t25.setText(msg.obj + "                      " + msg.what);
                                 i2++;
                                 break;
                             }
                             case 6:{
-                                t26.setText(msg.obj + " " + msg.what);
+                                t26.setText(msg.obj + "                      " + msg.what);
                                 i2++;
                                 break;
                             }
                             case 7:{
-                                t27.setText(msg.obj + " " + msg.what);
+                                t27.setText(msg.obj + "                      " + msg.what);
                                 i2++;
                                 break;
                             }
@@ -201,37 +202,37 @@ public class MainActivity extends AppCompatActivity {
                     case 3:{
                         switch (i3){
                             case 1:{
-                                t31.setText(msg.obj + " " + msg.what);
+                                t31.setText(msg.obj + "                      " + msg.what);
                                 i3++;
                                 break;
                             }
                             case 2:{
-                                t32.setText(msg.obj + " " + msg.what);
+                                t32.setText(msg.obj + "                      " + msg.what);
                                 i3++;
                                 break;
                             }
                             case 3:{
-                                t33.setText(msg.obj + " " + msg.what);
+                                t33.setText(msg.obj + "                      " + msg.what);
                                 i3++;
                                 break;
                             }
                             case 4:{
-                                t34.setText(msg.obj + " " + msg.what);
+                                t34.setText(msg.obj + "                      " + msg.what);
                                 i1++;
                                 break;
                             }
                             case 5:{
-                                t35.setText(msg.obj + " " + msg.what);
+                                t35.setText(msg.obj + "                      " + msg.what);
                                 i1++;
                                 break;
                             }
                             case 6:{
-                                t36.setText(msg.obj + " " + msg.what);
+                                t36.setText(msg.obj + "                      " + msg.what);
                                 i1++;
                                 break;
                             }
                             case 7:{
-                                t37.setText(msg.obj + " " + msg.what);
+                                t37.setText(msg.obj + "                      " + msg.what);
                                 i3++;
                                 break;
                             }
@@ -241,37 +242,37 @@ public class MainActivity extends AppCompatActivity {
                     case 4:{
                         switch (i4){
                             case 1:{
-                                t41.setText(msg.obj + " " + msg.what);
+                                t41.setText(msg.obj + "                      " + msg.what);
                                 i4++;
                                 break;
                             }
                             case 2:{
-                                t42.setText(msg.obj + " " + msg.what);
+                                t42.setText(msg.obj + "                      " + msg.what);
                                 i4++;
                                 break;
                             }
                             case 3:{
-                                t43.setText(msg.obj + " " + msg.what);
+                                t43.setText(msg.obj + "                      " + msg.what);
                                 i4++;
                                 break;
                             }
                             case 4:{
-                                t44.setText(msg.obj + " " + msg.what);
+                                t44.setText(msg.obj + "                      " + msg.what);
                                 i4++;
                                 break;
                             }
                             case 5:{
-                                t45.setText(msg.obj + " " + msg.what);
+                                t45.setText(msg.obj + "                      " + msg.what);
                                 i4++;
                                 break;
                             }
                             case 6:{
-                                t46.setText(msg.obj + " " + msg.what);
+                                t46.setText(msg.obj + "                      " + msg.what);
                                 i4++;
                                 break;
                             }
                             case 7:{
-                                t47.setText(msg.obj + " " + msg.what);
+                                t47.setText(msg.obj + "                      " + msg.what);
                                 i4++;
                                 break;
                             }
@@ -281,37 +282,37 @@ public class MainActivity extends AppCompatActivity {
                     case 5:{
                         switch (i5){
                             case 1:{
-                                t51.setText(msg.obj + " " + msg.what);
+                                t51.setText(msg.obj + "                      " + msg.what);
                                 i5++;
                                 break;
                             }
                             case 2:{
-                                t52.setText(msg.obj + " " + msg.what);
+                                t52.setText(msg.obj + "                      " + msg.what);
                                 i5++;
                                 break;
                             }
                             case 3:{
-                                t53.setText(msg.obj + " " + msg.what);
+                                t53.setText(msg.obj + "                      " + msg.what);
                                 i5++;
                                 break;
                             }
                             case 4:{
-                                t54.setText(msg.obj + " " + msg.what);
+                                t54.setText(msg.obj + "                      " + msg.what);
                                 i5++;
                                 break;
                             }
                             case 5:{
-                                t55.setText(msg.obj + " " + msg.what);
+                                t55.setText(msg.obj + "                      " + msg.what);
                                 i5++;
                                 break;
                             }
                             case 6:{
-                                t56.setText(msg.obj + " " + msg.what);
+                                t56.setText(msg.obj + "                      " + msg.what);
                                 i5++;
                                 break;
                             }
                             case 7:{
-                                t57.setText(msg.obj + " " + msg.what);
+                                t57.setText(msg.obj + "                      " + msg.what);
                                 i5++;
                                 break;
                             }

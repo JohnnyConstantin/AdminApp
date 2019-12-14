@@ -68,12 +68,10 @@ public class Client extends Thread {
                             Message msg = new Message();
                             msg.obj = String.valueOf(moneyToPay);
                             msg.what = this.number;
-                            TimeUnit.SECONDS.sleep(1);
                             MainActivity.handler1.sendMessage(msg);
                             Message msg2 = new Message();
                             msg2.obj = "Cucumber";
                             msg2.what = this.number;
-                            TimeUnit.SECONDS.sleep(1);
                             MainActivity.handler2.sendMessage(msg2);
                         } catch (InterruptedException e) {
                             e.printStackTrace();
@@ -98,7 +96,6 @@ public class Client extends Thread {
                             Message msg2 = new Message();
                             msg2.obj = "Apple";
                             msg2.what = this.number;
-                            TimeUnit.SECONDS.sleep(1);
                             MainActivity.handler2.sendMessage(msg2);
                         } catch (InterruptedException e) {
                             e.printStackTrace();

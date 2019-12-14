@@ -45,7 +45,7 @@
                         android:id="@+id/t11"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:color="@android:color//>
+                        android:background="@android:color/"/>
 
                     <TextView
                         android:id="@+id/t12"
@@ -86,7 +86,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/Customer2"
+                        android:id="@+id/Cust2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/Customer2"
@@ -139,7 +139,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/Customer3"
+                        android:id="@+id/Cust3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/Customer3"
@@ -159,6 +159,11 @@
 
                     <TextView
                         android:id="@+id/t33"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/t34"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
@@ -186,7 +191,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/Customer4"
+                        android:id="@+id/Cust4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/Customer4"
@@ -238,7 +243,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/Customer5"
+                        android:id="@+id/Cust5"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/Customer5"

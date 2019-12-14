@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button Start, Stack;
     static Handler handler1, handler2;
-    TextView Customer1, t11, t12, t13, t14, t15, t16, t17, t21, t22, t23, t24, t25, t26, t27, t31,
+    TextView Cust1, Cust2, Cust3, Cust4, Cust5, t11, t12, t13, t14, t15, t16, t17, t21, t22, t23, t24, t25, t26, t27, t31,
             t32, t33, t34, t35, t36, t37, t41, t42, t43, t44, t45, t46, t47, t51, t52, t53, t54, t55, t56, t57;
     LinearLayout Custlayout1, Custlayout2, Custlayout3, Custlayout4, Custlayout5;
 
@@ -38,6 +38,50 @@ public class MainActivity extends AppCompatActivity {
         cucumber.setQuantity(8);
         apple.setQuantity(8);
 
+        Cust1 = (TextView) findViewById(R.id.Cust1);
+        Cust2 = (TextView) findViewById(R.id.Cust2);
+        Cust3 = (TextView) findViewById(R.id.Cust3);
+        Cust4 = (TextView) findViewById(R.id.Cust4);
+        Cust5 = (TextView) findViewById(R.id.Cust5);
+
+        t11 = (TextView) findViewById(R.id.t11);
+        t12 = (TextView) findViewById(R.id.t12);
+        t13 = (TextView) findViewById(R.id.t13);
+        t14 = (TextView) findViewById(R.id.t14);
+        t15 = (TextView) findViewById(R.id.t15);
+        t16 = (TextView) findViewById(R.id.t16);
+        t17 = (TextView) findViewById(R.id.t17);
+        t21 = (TextView) findViewById(R.id.t21);
+        t22 = (TextView) findViewById(R.id.t22);
+        t23 = (TextView) findViewById(R.id.t23);
+        t24 = (TextView) findViewById(R.id.t24);
+        t25 = (TextView) findViewById(R.id.t25);
+        t26 = (TextView) findViewById(R.id.t26);
+        t27 = (TextView) findViewById(R.id.t27);
+        t31 = (TextView) findViewById(R.id.t31);
+        t32 = (TextView) findViewById(R.id.t32);
+        t33 = (TextView) findViewById(R.id.t33);
+        t34 = (TextView) findViewById(R.id.t34);
+        t35 = (TextView) findViewById(R.id.t35);
+        t36 = (TextView) findViewById(R.id.t36);
+        t37 = (TextView) findViewById(R.id.t37);
+        t41 = (TextView) findViewById(R.id.t41);
+        t42 = (TextView) findViewById(R.id.t42);
+        t43 = (TextView) findViewById(R.id.t43);
+        t44 = (TextView) findViewById(R.id.t44);
+        t45 = (TextView) findViewById(R.id.t45);
+        t46 = (TextView) findViewById(R.id.t46);
+        t47 = (TextView) findViewById(R.id.t47);
+        t51 = (TextView) findViewById(R.id.t51);
+        t52 = (TextView) findViewById(R.id.t52);
+        t53 = (TextView) findViewById(R.id.t53);
+        t54 = (TextView) findViewById(R.id.t54);
+        t55 = (TextView) findViewById(R.id.t55);
+        t56 = (TextView) findViewById(R.id.t56);
+        t57 = (TextView) findViewById(R.id.t57);
+
+
+
         Custlayout1 = (LinearLayout) findViewById(R.id.Custlayout1);
         Custlayout2 = (LinearLayout) findViewById(R.id.Custlayout2);
         Custlayout3 = (LinearLayout) findViewById(R.id.Custlayout3);
@@ -50,7 +94,6 @@ public class MainActivity extends AppCompatActivity {
         Custlayout4.setVisibility(View.INVISIBLE);
         Custlayout5.setVisibility(View.INVISIBLE);
 
-        Customer1 = (TextView) findViewById(R.id.Cust1);
         Start = (Button) findViewById(R.id.Start);
         Stack = (Button) findViewById(R.id.stack);
 
@@ -85,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
                     int MAX_CUSTOMERS;
                     MAX_CUSTOMERS = (int)((Math.random() * (5)) + 1);
                     /*
-                    Customer1.setText("" + MAX_CUSTOMERS);
+                    Cust1.setText("" + MAX_CUSTOMERS);
                     Проверка работы рандома
                     */
 

@@ -22,7 +22,6 @@ class Tomato implements Product{
     }
 }
 
-
 class Cucumber implements Product{
     String name = "Cucumber";
     public static int price = 4;

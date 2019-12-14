@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button Start, Stack;
     TextView Customer1;
-    LinearLayout Custlayout1,Custlayout2, Custlayout3, Custlayout4, Custlayout5;
+    LinearLayout Custlayout1, Custlayout2, Custlayout3, Custlayout4, Custlayout5;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
                             Custlayout3.setVisibility(View.GONE);
                             Custlayout4.setVisibility(View.GONE);
                             Custlayout5.setVisibility(View.GONE);
+
                             break;
                         case 2:
                             Custlayout1.setVisibility(View.VISIBLE);
@@ -98,6 +99,8 @@ public class MainActivity extends AppCompatActivity {
                             break;
                     }
                     break;
+
+
                 case R.id.stack:
                     i = new Intent(MainActivity.this, Stacks.class);
                     startActivity(i);

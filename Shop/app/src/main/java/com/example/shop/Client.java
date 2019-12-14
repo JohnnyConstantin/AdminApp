@@ -12,7 +12,6 @@ public class Client extends Thread {
     Tomato tomato;
     Apple apple;
     Cucumber cucumber;
-    boolean running = true;
 
     public Client(CashBox cash, int maxProducts){
         cashBox = cash;
@@ -72,8 +71,6 @@ public class Client extends Thread {
                 }
             }
         }
-
-
         while (this.moneyToPay > 0) {
             synchronized (cashBox) {
                 if (cashBox.getStatus()) {
@@ -88,7 +85,6 @@ public class Client extends Thread {
                     try {
                         TimeUnit.SECONDS.sleep(2);
                         this.moneyToPay = 0;
-                        this.running = false;
                         cashBox.setStatus(false);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
@@ -97,5 +93,4 @@ public class Client extends Thread {
             }
         }
     }
-
 }

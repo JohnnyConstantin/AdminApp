@@ -11,6 +11,11 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    CashBox cashBox;
+    Tomato tomato;
+    Cucumber cucumber;
+    Apple apple;
+
     Button Start, Stack;
     TextView Customer1;
     LinearLayout Custlayout1,Custlayout2, Custlayout3, Custlayout4, Custlayout5;
@@ -18,6 +23,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        cashBox.setStatus(false);
+        tomato.setQuantity(0);
+        cucumber.setQuantity(0);
+        apple.setQuantity(0);
 
         Custlayout1 = (LinearLayout) findViewById(R.id.Custlayout1);
         Custlayout2 = (LinearLayout) findViewById(R.id.Custlayout2);

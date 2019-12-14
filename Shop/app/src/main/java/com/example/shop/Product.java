@@ -7,7 +7,6 @@ abstract class Product {
 }
 
 class Tomato extends Product{
-    String name = "Tomato";
     private static int quantity;
 
     @Override
@@ -36,7 +35,7 @@ class Cucumber extends Product{
     }
 }
 
-class Applr extends Product{
+class Apple extends Product{
     private static int quantity;
 
     @Override

@@ -107,6 +107,28 @@ public class MainActivity extends AppCompatActivity {
                 super.handleMessage(msg);
                 String text = msg.obj.toString();
                 int clnNum = msg.what;
+                switch (clnNum){
+                    case 1:{
+                        Cust1.setText("Клиент 1 сумма : "+text);
+                        break;
+                    }
+                    case 2:{
+                        Cust2.setText("Клиент 2 сумма : "+text);
+                        break;
+                    }
+                    case 3:{
+                        Cust3.setText("Клиент 3 сумма : "+text);
+                        break;
+                    }
+                    case 4:{
+                        Cust4.setText("Клиент 4 сумма : "+text);
+                        break;
+                    }
+                    case 5:{
+                        Cust5.setText("Клиент 5 сумма : "+text);
+                        break;
+                    }
+                }
 
             }
         };
@@ -413,6 +435,3 @@ public class MainActivity extends AppCompatActivity {
         Stack.setOnClickListener(listener);
     }
 }
-
-
-

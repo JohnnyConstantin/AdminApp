@@ -1,13 +1,12 @@
 package com.example.shop;
 
 import android.os.Message;
-import android.view.textclassifier.ConversationActions;
 
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public class Client extends Thread {
-    CashBox cashBox;
+    static CashBox cashBox;
     int moneyToPay;
     int maxProducts;
     String[] productList;

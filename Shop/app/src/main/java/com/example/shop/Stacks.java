@@ -1,4 +1,6 @@
 package com.example.shop;
 
-class Stacks {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class Stacks extends AppCompatActivity {
 }

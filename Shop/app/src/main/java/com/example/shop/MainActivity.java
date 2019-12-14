@@ -11,10 +11,10 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    CashBox cashBox;
-    Tomato tomato;
-    Cucumber cucumber;
-    Apple apple;
+    CashBox cashBox = new CashBox(false);
+    Tomato tomato = new Tomato();
+    Cucumber cucumber = new Cucumber();
+    Apple apple = new Apple();
 
     Button Start, Stack;
     TextView Customer1;

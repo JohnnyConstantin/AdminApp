@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -15,9 +17,11 @@ public class MainActivity extends AppCompatActivity {
     Tomato tomato = new Tomato();
     Cucumber cucumber = new Cucumber();
     Apple apple = new Apple();
+    Client client1, client2, client3, client4, client5;
 
 
     Button Start, Stack;
+    static Handler handler1, handler2;
     TextView Customer1;
     LinearLayout Custlayout1, Custlayout2, Custlayout3, Custlayout4, Custlayout5;
     @Override
@@ -26,9 +30,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         cashBox.setStatus(false);
-        tomato.setQuantity(0);
-        cucumber.setQuantity(0);
-        apple.setQuantity(0);
+        tomato.setQuantity(8);
+        cucumber.setQuantity(8);
+        apple.setQuantity(8);
 
         Custlayout1 = (LinearLayout) findViewById(R.id.Custlayout1);
         Custlayout2 = (LinearLayout) findViewById(R.id.Custlayout2);
@@ -45,6 +49,25 @@ public class MainActivity extends AppCompatActivity {
         Customer1 = (TextView) findViewById(R.id.Cust1);
         Start = (Button) findViewById(R.id.Start);
         Stack = (Button) findViewById(R.id.stack);
+
+        // handler для общей стоимости товаров
+        handler1 = new Handler(){
+            @Override
+            public void handleMessage(Message msg) {
+                super.handleMessage(msg);
+                String text = String.valueOf(msg.what);
+
+            }
+        };
+
+        // handler для списка товаров
+        handler2 = new Handler(){
+            @Override
+            public void handleMessage(Message msg) {
+                super.handleMessage(msg);
+                String text = msg.obj.toString();
+            }
+        };
 
 
    View.OnClickListener listener = new View.OnClickListener() {
@@ -67,7 +90,11 @@ public class MainActivity extends AppCompatActivity {
                             Custlayout3.setVisibility(View.GONE);
                             Custlayout4.setVisibility(View.GONE);
                             Custlayout5.setVisibility(View.GONE);
+<<<<<<< HEAD
 
+=======
+                            client1 = new Client(cashBox, 3);
+>>>>>>> develop
                             break;
                         case 2:
                             Custlayout1.setVisibility(View.VISIBLE);
@@ -75,6 +102,8 @@ public class MainActivity extends AppCompatActivity {
                             Custlayout3.setVisibility(View.GONE);
                             Custlayout4.setVisibility(View.GONE);
                             Custlayout5.setVisibility(View.GONE);
+                            client1 = new Client(cashBox, 3);
+                            client2 = new Client(cashBox, 4);
                             break;
                         case 3:
                             Custlayout1.setVisibility(View.VISIBLE);
@@ -82,6 +111,9 @@ public class MainActivity extends AppCompatActivity {
                             Custlayout3.setVisibility(View.VISIBLE);
                             Custlayout4.setVisibility(View.GONE);
                             Custlayout5.setVisibility(View.GONE);
+                            client1 = new Client(cashBox, 3);
+                            client2 = new Client(cashBox, 4);
+                            client3 = new Client(cashBox, 5);
                             break;
                         case 4:
                             Custlayout1.setVisibility(View.VISIBLE);
@@ -89,6 +121,10 @@ public class MainActivity extends AppCompatActivity {
                             Custlayout3.setVisibility(View.VISIBLE);
                             Custlayout4.setVisibility(View.VISIBLE);
                             Custlayout5.setVisibility(View.GONE);
+                            client1 = new Client(cashBox, 3);
+                            client2 = new Client(cashBox, 4);
+                            client3 = new Client(cashBox, 5);
+                            client4 = new Client(cashBox, 6);
                             break;
                         case 5:
                             Custlayout1.setVisibility(View.VISIBLE);
@@ -96,6 +132,11 @@ public class MainActivity extends AppCompatActivity {
                             Custlayout3.setVisibility(View.VISIBLE);
                             Custlayout4.setVisibility(View.VISIBLE);
                             Custlayout5.setVisibility(View.VISIBLE);
+                            client1 = new Client(cashBox, 3);
+                            client2 = new Client(cashBox, 4);
+                            client3 = new Client(cashBox, 5);
+                            client4 = new Client(cashBox, 6);
+                            client5 = new Client(cashBox, 7);
                             break;
                     }
                     break;
@@ -114,8 +155,6 @@ public class MainActivity extends AppCompatActivity {
         Stack.setOnClickListener(listener);
     }
 }
-
-
 
 
 

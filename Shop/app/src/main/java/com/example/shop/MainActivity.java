@@ -90,11 +90,11 @@ public class MainActivity extends AppCompatActivity {
                             Custlayout3.setVisibility(View.GONE);
                             Custlayout4.setVisibility(View.GONE);
                             Custlayout5.setVisibility(View.GONE);
-<<<<<<< HEAD
 
-=======
+
+
                             client1 = new Client(cashBox, 3);
->>>>>>> develop
+
                             break;
                         case 2:
                             Custlayout1.setVisibility(View.VISIBLE);

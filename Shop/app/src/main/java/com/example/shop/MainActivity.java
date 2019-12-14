@@ -28,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
             t32, t33, t34, t35, t36, t37, t41, t42, t43, t44, t45, t46, t47, t51, t52, t53, t54, t55, t56, t57;
     LinearLayout Custlayout1, Custlayout2, Custlayout3, Custlayout4, Custlayout5;
 
+    int i1 = 1,i2 = 1,i3 = 1,i4 = 1,i5 = 1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -115,6 +117,209 @@ public class MainActivity extends AppCompatActivity {
                 super.handleMessage(msg);
                 String text = msg.obj.toString();
                 int clnNum = msg.what;
+                switch (clnNum){
+                    case 1: {
+                        switch (i1) {
+                            case 1: {
+                                t11.setText(msg.obj + " " + msg.what);
+                                i1++;
+                                break;
+                            }
+                            case 2: {
+                                t12.setText(msg.obj + " " + msg.what);
+                                i1++;
+                                break;
+                            }
+                            case 3: {
+                                t13.setText(msg.obj + " " + msg.what);
+                                i1++;
+                                break;
+                            }
+                            case 4: {
+                                t14.setText(msg.obj + " " + msg.what);
+                                i1++;
+                                break;
+                            }
+                            case 5: {
+                                t15.setText(msg.obj + " " + msg.what);
+                                i1++;
+                                break;
+                            }
+                            case 6: {
+                                t16.setText(msg.obj + " " + msg.what);
+                                i1++;
+                                break;
+                            }
+                            case 7: {
+                                t17.setText(msg.obj + " " + msg.what);
+                                i1++;
+                                break;
+                            }
+                        }
+                        break;
+                    }
+                    case 2:{
+                        switch (i2){
+                            case 1:{
+                                t21.setText(msg.obj + " " + msg.what);
+                                i2++;
+                                break;
+                            }
+                            case 2:{
+                                t22.setText(msg.obj + " " + msg.what);
+                                i2++;
+                                break;
+                            }
+                            case 3:{
+                                t23.setText(msg.obj + " " + msg.what);
+                                i1++;
+                                break;
+                            }
+                            case 4:{
+                                t24.setText(msg.obj + " " + msg.what);
+                                i2++;
+                                break;
+                            }
+                            case 5:{
+                                t25.setText(msg.obj + " " + msg.what);
+                                i2++;
+                                break;
+                            }
+                            case 6:{
+                                t26.setText(msg.obj + " " + msg.what);
+                                i2++;
+                                break;
+                            }
+                            case 7:{
+                                t27.setText(msg.obj + " " + msg.what);
+                                i2++;
+                                break;
+                            }
+                        }
+                        break;
+                    }
+                    case 3:{
+                        switch (i3){
+                            case 1:{
+                                t31.setText(msg.obj + " " + msg.what);
+                                i3++;
+                                break;
+                            }
+                            case 2:{
+                                t32.setText(msg.obj + " " + msg.what);
+                                i3++;
+                                break;
+                            }
+                            case 3:{
+                                t33.setText(msg.obj + " " + msg.what);
+                                i3++;
+                                break;
+                            }
+                            case 4:{
+                                t34.setText(msg.obj + " " + msg.what);
+                                i1++;
+                                break;
+                            }
+                            case 5:{
+                                t35.setText(msg.obj + " " + msg.what);
+                                i1++;
+                                break;
+                            }
+                            case 6:{
+                                t36.setText(msg.obj + " " + msg.what);
+                                i1++;
+                                break;
+                            }
+                            case 7:{
+                                t37.setText(msg.obj + " " + msg.what);
+                                i3++;
+                                break;
+                            }
+                        }
+                        break;
+                    }
+                    case 4:{
+                        switch (i4){
+                            case 1:{
+                                t41.setText(msg.obj + " " + msg.what);
+                                i4++;
+                                break;
+                            }
+                            case 2:{
+                                t42.setText(msg.obj + " " + msg.what);
+                                i4++;
+                                break;
+                            }
+                            case 3:{
+                                t43.setText(msg.obj + " " + msg.what);
+                                i4++;
+                                break;
+                            }
+                            case 4:{
+                                t44.setText(msg.obj + " " + msg.what);
+                                i4++;
+                                break;
+                            }
+                            case 5:{
+                                t45.setText(msg.obj + " " + msg.what);
+                                i4++;
+                                break;
+                            }
+                            case 6:{
+                                t46.setText(msg.obj + " " + msg.what);
+                                i4++;
+                                break;
+                            }
+                            case 7:{
+                                t47.setText(msg.obj + " " + msg.what);
+                                i4++;
+                                break;
+                            }
+                        }
+                        break;
+                    }
+                    case 5:{
+                        switch (i5){
+                            case 1:{
+                                t51.setText(msg.obj + " " + msg.what);
+                                i5++;
+                                break;
+                            }
+                            case 2:{
+                                t52.setText(msg.obj + " " + msg.what);
+                                i5++;
+                                break;
+                            }
+                            case 3:{
+                                t53.setText(msg.obj + " " + msg.what);
+                                i5++;
+                                break;
+                            }
+                            case 4:{
+                                t54.setText(msg.obj + " " + msg.what);
+                                i5++;
+                                break;
+                            }
+                            case 5:{
+                                t55.setText(msg.obj + " " + msg.what);
+                                i5++;
+                                break;
+                            }
+                            case 6:{
+                                t56.setText(msg.obj + " " + msg.what);
+                                i5++;
+                                break;
+                            }
+                            case 7:{
+                                t57.setText(msg.obj + " " + msg.what);
+                                i5++;
+                                break;
+                            }
+                        }
+                        break;
+                    }
+
+                }
             }
         };
 

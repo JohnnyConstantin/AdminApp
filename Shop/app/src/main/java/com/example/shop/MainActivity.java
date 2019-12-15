@@ -11,6 +11,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import java.util.concurrent.TimeUnit;
 
 
@@ -535,7 +537,7 @@ public class MainActivity extends AppCompatActivity {
                     break;
 
                 case R.id.Stack:
-
+                    Toast.makeText(MainActivity.this, "This feature is developing right now.\n Wait a little and it will work", Toast.LENGTH_SHORT).show();
                     break;
                 default:
                     break;

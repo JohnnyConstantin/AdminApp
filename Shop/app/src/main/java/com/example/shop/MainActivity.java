@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+
 public class MainActivity extends AppCompatActivity {
 
     CashBox cashBox = new CashBox(false);
@@ -101,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
         Custlayout5.setVisibility(View.INVISIBLE);
 
         Start = (Button) findViewById(R.id.Start);
-        Stack = (Button) findViewById(R.id.stack);
+        Stack = (Button) findViewById(R.id.Stack);
 
         // handler для общей стоимости товаров
         handler1 = new Handler(){
@@ -113,23 +114,23 @@ public class MainActivity extends AppCompatActivity {
                 int clnNum = msg.what;
                 switch (clnNum){
                     case 1:{
-                        Cust1.setText("Клиент 1 сумма : "+ text);
+                        Cust1.setText("Client 1                              Total : "+ text + " $");
                         break;
                     }
                     case 2:{
-                        Cust2.setText("Клиент 2 сумма : "+ text);
+                        Cust2.setText("Client 2                              Total : "+ text + " $");
                         break;
                     }
                     case 3:{
-                        Cust3.setText("Клиент 3 сумма : "+ text);
+                        Cust3.setText("Client 3                              Total : "+ text + " $");
                         break;
                     }
                     case 4:{
-                        Cust4.setText("Клиент 4 сумма : "+ text);
+                        Cust4.setText("Client 4                              Total : "+ text + " $");
                         break;
                     }
                     case 5:{
-                        Cust5.setText("Клиент 5 сумма : "+ text);
+                        Cust5.setText("Client 5                              Total : "+ text + " $");
                         break;
                     }
                 }
@@ -391,6 +392,7 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View v) {
             Intent i;
             switch (v.getId()) {
+
                 case R.id.Start:
                     int MAX_CUSTOMERS;
                     MAX_CUSTOMERS = (int)((Math.random() * (5)) + 1);
@@ -472,13 +474,8 @@ public class MainActivity extends AppCompatActivity {
                     }
                     break;
 
+                case R.id.Stack:
 
-                case R.id.stack:
-                    i = new Intent(MainActivity.this, Stacks.class);
-                    i.putExtra("apple", apple.getQuantity());
-                    i.putExtra("cucumber", cucumber.getQuantity());
-                    i.putExtra("tomato", tomato.getQuantity());
-                    startActivity(i);
                     break;
                 default:
                     break;

@@ -1,10 +1,14 @@
 <resources>
     <string name="app_name">Shop</string>
-    <string name="stack">Товары</string>
-    <string name="Customer1">Клиент 1</string>
-    <string name="Customer2">Клиент 2</string>
-    <string name="Customer3">Клиент 3</string>
-    <string name="Customer4">Клиент 4</string>
-    <string name="Customer5">Клиент 5</string>
-    <string name="Start">Начать</string>
+    <string name="stack">Goods</string>
+    <string name="Customer1">Client 1</string>
+    <string name="Customer2">Client 2</string>
+    <string name="Customer3">Client 3</string>
+    <string name="Customer4">Client 4</string>
+    <string name="Customer5">Client 5</string>
+    <string name="Start">Start</string>
+    <string name="Apple">Apples</string>
+    <string name="Cucumber">Cucumbers</string>
+    <string name="Tomato">Tomatoes</string>
+    <string name="Back">Back</string>
 </resources>

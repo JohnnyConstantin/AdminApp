@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Stacks"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/TColor">
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            app:srcCompat="@drawable/apple" />
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            app:srcCompat="@drawable/cucumber" />
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            app:srcCompat="@drawable/tomato" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="350dp"
+            android:background="#816D6D6D"
+            android:text="@string/Back" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/colorBack"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Apple"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:text="@string/Apple"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/Cucumber"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:text="@string/Cucumber"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:text="@string/Tomato"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/TColor"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/app_edit"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColor="#8F8F8F"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/cuc_edit"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColor="#8F8F8F" />
+
+        <EditText
+            android:id="@+id/tom_edit"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColor="#8F8F8F"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>

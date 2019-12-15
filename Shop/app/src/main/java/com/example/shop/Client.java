@@ -6,6 +6,7 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public class Client extends Thread {
+    boolean working = true;
     static CashBox cashBox;
     int moneyToPay;
     int maxProducts;
@@ -103,6 +104,7 @@ public class Client extends Thread {
                     }
                 }
             }
+            if(this.productList[maxProducts - 1] != null) working = false;
         }
         while (this.moneyToPay > 0) {
             synchronized (cashBox) {

@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import java.util.concurrent.TimeUnit;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -20,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     Cucumber cucumber = new Cucumber();
     Apple apple = new Apple();
     Client client1, client2, client3, client4, client5;
-
+    int chose_end=0;
     int profit = 0;
 
 
@@ -379,11 +380,69 @@ public class MainActivity extends AppCompatActivity {
                                 break;
                             }
                         }
+
+
                         break;
                     }
 
                 }
-            }
+                    try {
+                        switch (chose_end) {
+                            case 1: {
+                                if (!client1.working ) {
+                                    TimeUnit.SECONDS.sleep(2);
+                                    Custlayout1.setVisibility(View.GONE);
+                                }
+                                break;
+                            }
+                            case 2: {
+                                if (!client1.working && !client2.working){
+                                    TimeUnit.SECONDS.sleep(2);
+                                    Custlayout1.setVisibility(View.GONE);
+                                    Custlayout2.setVisibility(View.GONE);
+                                }
+
+                                break;
+                            }
+                            case 3: {
+                                if (!client1.working && !client2.working && !client3.working){
+                                    TimeUnit.SECONDS.sleep(2);
+                                    Custlayout1.setVisibility(View.GONE);
+                                    Custlayout2.setVisibility(View.GONE);
+                                    Custlayout3.setVisibility(View.GONE);
+                                }
+
+                                break;
+                            }
+                            case 4: {
+                                if (!client1.working && !client2.working && !client3.working && !client4.working){
+                                    TimeUnit.SECONDS.sleep(2);
+                                    Custlayout1.setVisibility(View.GONE);
+                                    Custlayout2.setVisibility(View.GONE);
+                                    Custlayout3.setVisibility(View.GONE);
+                                    Custlayout4.setVisibility(View.GONE);
+                                }
+
+                                break;
+                            }
+                            case 5: {
+                                if (!client1.working && !client2.working && !client3.working && !client4.working && !client5.working) {
+                                    TimeUnit.SECONDS.sleep(2);
+                                    Custlayout1.setVisibility(View.GONE);
+                                    Custlayout2.setVisibility(View.GONE);
+                                    Custlayout3.setVisibility(View.GONE);
+                                    Custlayout4.setVisibility(View.GONE);
+                                    Custlayout5.setVisibility(View.GONE);
+                                }
+                                break;
+
+                            }
+                        }
+                    }
+                    catch (InterruptedException e){
+                        e.printStackTrace();
+                    }
+                }
         };
 
 
@@ -408,12 +467,9 @@ public class MainActivity extends AppCompatActivity {
                             Custlayout3.setVisibility(View.GONE);
                             Custlayout4.setVisibility(View.GONE);
                             Custlayout5.setVisibility(View.GONE);
-
-
-
                             client1 = new Client(cashBox, 3, 1);
+                            chose_end = 1;
                             client1.start();
-
                             break;
                         case 2:
                             Custlayout1.setVisibility(View.VISIBLE);
@@ -423,6 +479,7 @@ public class MainActivity extends AppCompatActivity {
                             Custlayout5.setVisibility(View.GONE);
                             client1 = new Client(cashBox, 3, 1);
                             client2 = new Client(cashBox, 4, 2);
+                            chose_end = 2;
                             client1.start();
                             client2.start();
                             break;
@@ -435,6 +492,7 @@ public class MainActivity extends AppCompatActivity {
                             client1 = new Client(cashBox, 3, 1);
                             client2 = new Client(cashBox, 4, 2);
                             client3 = new Client(cashBox, 5, 3);
+                            chose_end = 3;
                             client1.start();
                             client2.start();
                             client3.start();
@@ -449,6 +507,7 @@ public class MainActivity extends AppCompatActivity {
                             client2 = new Client(cashBox, 4, 2);
                             client3 = new Client(cashBox, 5, 3);
                             client4 = new Client(cashBox, 6, 4);
+                            chose_end = 4;
                             client1.start();
                             client2.start();
                             client3.start();
@@ -465,6 +524,7 @@ public class MainActivity extends AppCompatActivity {
                             client3 = new Client(cashBox, 5, 3);
                             client4 = new Client(cashBox, 6, 4);
                             client5 = new Client(cashBox, 7, 5);
+                            chose_end = 5;
                             client1.start();
                             client2.start();
                             client3.start();
@@ -484,5 +544,6 @@ public class MainActivity extends AppCompatActivity {
     };
         Start.setOnClickListener(listener);
         Stack.setOnClickListener(listener);
+
     }
 }

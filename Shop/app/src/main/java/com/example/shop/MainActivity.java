@@ -392,49 +392,53 @@ public class MainActivity extends AppCompatActivity {
                         switch (chose_end) {
                             case 1: {
                                 if (!client1.working ) {
-                                    TimeUnit.SECONDS.sleep(2);
+                                    TimeUnit.SECONDS.sleep(3);
                                     Custlayout1.setVisibility(View.GONE);
+                                    Toast.makeText(MainActivity.this,"Shop profit:         "+profit+"$",Toast.LENGTH_LONG).show();
                                 }
                                 break;
                             }
                             case 2: {
                                 if (!client1.working && !client2.working){
-                                    TimeUnit.SECONDS.sleep(2);
+                                    TimeUnit.SECONDS.sleep(3);
                                     Custlayout1.setVisibility(View.GONE);
                                     Custlayout2.setVisibility(View.GONE);
+                                    Toast.makeText(MainActivity.this,"Shop profit:         "+profit+"$",Toast.LENGTH_LONG).show();
                                 }
-
                                 break;
                             }
                             case 3: {
                                 if (!client1.working && !client2.working && !client3.working){
-                                    TimeUnit.SECONDS.sleep(2);
+                                    TimeUnit.SECONDS.sleep(3);
                                     Custlayout1.setVisibility(View.GONE);
                                     Custlayout2.setVisibility(View.GONE);
                                     Custlayout3.setVisibility(View.GONE);
+                                    Toast.makeText(MainActivity.this,"Shop profit:         "+profit+"$",Toast.LENGTH_LONG).show();
                                 }
 
                                 break;
                             }
                             case 4: {
                                 if (!client1.working && !client2.working && !client3.working && !client4.working){
-                                    TimeUnit.SECONDS.sleep(2);
+                                    TimeUnit.SECONDS.sleep(3);
                                     Custlayout1.setVisibility(View.GONE);
                                     Custlayout2.setVisibility(View.GONE);
                                     Custlayout3.setVisibility(View.GONE);
                                     Custlayout4.setVisibility(View.GONE);
+                                    Toast.makeText(MainActivity.this,"Shop profit:         "+profit+"$",Toast.LENGTH_LONG).show();
                                 }
 
                                 break;
                             }
                             case 5: {
                                 if (!client1.working && !client2.working && !client3.working && !client4.working && !client5.working) {
-                                    TimeUnit.SECONDS.sleep(2);
+                                    TimeUnit.SECONDS.sleep(3);
                                     Custlayout1.setVisibility(View.GONE);
                                     Custlayout2.setVisibility(View.GONE);
                                     Custlayout3.setVisibility(View.GONE);
                                     Custlayout4.setVisibility(View.GONE);
                                     Custlayout5.setVisibility(View.GONE);
+                                    Toast.makeText(MainActivity.this,"Shop profit:         "+profit+"$",Toast.LENGTH_LONG).show();
                                 }
                                 break;
 
